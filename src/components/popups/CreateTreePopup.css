@@ -1,0 +1,12 @@
+.create-tree-popup-container {
+  background-color: aqua;
+  position: absolute; /* use absolute if it's within a relatively positioned parent */
+  width: 800px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  z-index: 9999; /* ensure it's on top */
+}

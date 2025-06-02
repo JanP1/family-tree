@@ -8,6 +8,7 @@ body{
 
 /* The main background of the SPA */
 .spa-layout-container {
+  position: relative;
   margin: 10px;
   width: calc(100% - 20px);  /* Subtract margins */
   height: calc(100vh - 20px);
