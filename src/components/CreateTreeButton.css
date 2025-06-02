@@ -84,8 +84,6 @@
 }
 
 .animated-button:hover {
-  height: 50px;
-  box-shadow: 0 0 0 12px transparent;
   color: #212121;
   border-radius: 12px;
 }
