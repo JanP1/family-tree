@@ -1,12 +1,21 @@
 import "./MainMenu.css"
 import logo from '../assets/tree.png'
+import useVisibilityStore from "../stores/visibilityStore"
 
 export default function MainMenu() {
+
+
+  const openCreatePopup = () => {
+    useVisibilityStore.getState().createPopupOpened();
+  };
+
   return (
     <div className="main-menu-container">
       <img src={logo} alt="Logo" className="tree-logo"/>
       
       <div className="menu-button-container">
+
+        {/* === Button for showing created trees === */}
         <button className="animated-button aqua-button">
           <svg viewBox="0 0 24 24" className="arr-2" >
             <path
@@ -21,7 +30,9 @@ export default function MainMenu() {
             ></path>
           </svg>
         </button>
-        <button className="animated-button green-button">
+
+        {/* === Button for showing tree creation popup === */}
+        <button className="animated-button green-button" onClick={openCreatePopup}>
           <svg viewBox="0 0 24 24" className="arr-2" >
             <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>
@@ -31,6 +42,7 @@ export default function MainMenu() {
             <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>
         </button>
+
       </div>
     </div>
   )
