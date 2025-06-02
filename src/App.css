@@ -23,7 +23,7 @@ body{
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns:0 1fr;
 }
 
 
@@ -38,11 +38,8 @@ body{
 }
 
 .main-middle-grid-block {
+  position: relative;
   /*background-color: yellow;*/
   grid-column: 2;
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
 }
 

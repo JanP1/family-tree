@@ -12,14 +12,14 @@ function App() {
       {!treeEditorActivated && <CreateTreeButton/>}
       {treeEditorActivated && <div className="main-page-grid">
         <div className="main-left-grid-block">
-          <button  className="details-button">
-            <span>Tree Info</span>
-          </button>
 
         </div>
         <div className="main-middle-grid-block">
           <FamilyTreeCanvas/>
 
+          <button  className="details-button">
+            <span>Tree Info</span>
+          </button>
         </div>
       </div>}
     </div>
