@@ -3,6 +3,7 @@ import "./components/Buttons.css"
 import FamilyTreeCanvas from "./components/FamilyTreeCanvas";
 import MainMenu from "./components/MainMenu";
 import CreateTreePopup from "./components/popups/CreateTreePopup";
+import ShowTreesPopup from "./components/popups/ShowTreesPopup";
 import useVisibilityStore from "./stores/visibilityStore";
 
 
@@ -10,6 +11,7 @@ function App() {
 
   const mainMenuVisibility = useVisibilityStore((state) => state.mainMenuVisibility);
   const createPopupVisibility = useVisibilityStore((state) => state.createPopupVisibility)
+  const showTreesPopupVisibility = useVisibilityStore((state) => state.showTreesPopupVisibility)
 
   const goBackToMenu = () => {
     useVisibilityStore.getState().mainMenuOpened();
@@ -17,7 +19,12 @@ function App() {
 
   const closePopup = (event:React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
-      useVisibilityStore.getState().createPopupClosed();
+      if (createPopupVisibility == true) {
+        useVisibilityStore.getState().createPopupClosed();
+      }
+      if (showTreesPopupVisibility == true) {
+        useVisibilityStore.getState().showTreesPopupClosed();
+      }
     }
   };
 
@@ -30,6 +37,7 @@ function App() {
         <>
           <MainMenu/>
           { createPopupVisibility && <CreateTreePopup/>}
+          { showTreesPopupVisibility && <ShowTreesPopup/>}
         </>
 
 

@@ -1,4 +1,4 @@
-.create-tree-popup-container {
+.show-trees-popup-container {
   background-color: #141716;
   color: aqua;
   position: absolute; /* use absolute if it's within a relatively positioned parent */
