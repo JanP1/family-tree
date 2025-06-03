@@ -11,6 +11,9 @@ function App() {
   const mainMenuVisibility = useVisibilityStore((state) => state.mainMenuVisibility);
   const createPopupVisibility = useVisibilityStore((state) => state.createPopupVisibility)
 
+  const goBackToMenu = () => {
+    useVisibilityStore.getState().mainMenuOpened();
+  }
 
   const closePopup = (event:React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
@@ -43,7 +46,7 @@ function App() {
             <span>Tree Info</span>
           </button>
 
-          <button className="back-menu-button">
+          <button className="back-menu-button" onClick={goBackToMenu}>
             <span>Main Menu</span>
           
           </button>

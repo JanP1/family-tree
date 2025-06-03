@@ -12,6 +12,7 @@
   "app": {
     "windows": [
       {
+        "decorations": false,
         "title": "family-tree",
         "width": 800,
         "height": 600
