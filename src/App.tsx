@@ -1,5 +1,5 @@
 import "./App.css";
-import "./components/Buttons.css"
+import "./styles/Buttons.css"
 import FamilyTreeCanvas from "./components/FamilyTreeCanvas";
 import MainMenu from "./components/MainMenu";
 import CreateTreePopup from "./components/popups/CreateTreePopup";

@@ -1,4 +1,4 @@
-import './FamilyTreeCanvas.css'
+import '../styles/FamilyTreeCanvas.css'
 
 export default function FamilyTreeCanvas() {
   return (

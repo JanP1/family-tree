@@ -1,4 +1,4 @@
-import './ShowTreesPopup.css'
+import '../../styles/ShowTreesPopup.css'
 
 export default function ShowTreesPopup() {
   return (

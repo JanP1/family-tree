@@ -1,4 +1,4 @@
-import "./MainMenu.css"
+import "../styles/MainMenu.css"
 import logo from '../assets/tree.png'
 import useVisibilityStore from "../stores/visibilityStore"
 
