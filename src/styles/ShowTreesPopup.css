@@ -20,7 +20,14 @@
 .popup-area {
   height: 100%;
   width: 100%;
+  margin: 20px;
+  justify-content: left;
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* background-color: green; */
+  overflow: scroll;
 }
 
 @keyframes slideUp {
@@ -33,21 +40,30 @@
 
 .popup-tree-display-container {
   height: 150px;
-  width: 150px;
-  margin: 20px;
+  width: 350px;
 
+  background-color: #1a243d;
+  cursor: pointer;
   display: grid;
   grid-template-rows: 2fr 1fr;
+
+  border: 2px solid transparent; /* invisible border to reserve space */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  border-radius: 10px;
+
+  overflow: hidden;
   
-  border-radius: 10%;
-  background-color: #2c664e;
-  
+}
+.popup-tree-display-container:hover {
+  border-color: lightblue;
 }
 
 .popup-top-part {
   display: flex;
+  padding-left: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
   height: 100%;
   grid-row: 1;
@@ -57,20 +73,22 @@
 
 .popup-bottom-part {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: left;
   width: 100%;
   height: 100%;
   grid-row: 2;
+  padding-left: 40px;
 
   overflow: hidden;
 }
 
 .image-holder {
-  justify-self: center;
-  width: 90px;
-  height: 90px;
-  background-color: lightblue;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  
+  border: 2px solid lightblue; /* invisible border to reserve space */
 
 }
 
@@ -78,7 +96,6 @@
   max-width: 120px;
   width: 100%;
   word-wrap: break-word;
-  text-align: center;
   user-select: none;
   -webkit-user-select: none;
 }
