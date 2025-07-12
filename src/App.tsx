@@ -44,9 +44,6 @@ function App() {
       }
       {!mainMenuVisibility && <div className="main-page-grid">
 
-        <div className="main-left-grid-block">
-        
-        </div>
         <div className="main-middle-grid-block">
           <FamilyTreeCanvas/>
 

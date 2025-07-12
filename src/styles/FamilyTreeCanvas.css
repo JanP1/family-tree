@@ -7,4 +7,38 @@
   background-size: 20px 20px;
   border: solid rgba(200, 200, 255, 0.5);
   border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+.tree-canvas {
+  border-radius: 10px;
+
+}
+
+.info-div {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%); /* Vertically center */
+  
+  border-radius: 12px;
+  width: 500px;
+  height: 90%; 
+  background-color: #0c0c0d;
+  visibility: hidden;
+}
+
+.canvas-container-div {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -24,23 +24,12 @@ body{
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns:0 1fr;
 }
 
 
-
-
-.main-left-grid-block {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  grid-column: 1;
-}
 
 .main-middle-grid-block {
-  position: relative;
-  /*background-color: yellow;*/
   grid-column: 2;
+  overflow: hidden;
 }
 
