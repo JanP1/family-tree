@@ -114,47 +114,7 @@ const TreeCanvas: React.FC = () => {
 
         // Draw lines connecting to children
 
-        // if (person.children_ids && person.children_ids.length > 0) {
-        //   const joinX = (x1 + x2) / 2;
-        //   const joinY = (y1 + y2) / 2;
-        //   const childY = joinY + 40;
-        //
-        //   // Vertical line downward from spouse connection
-        //   ctx.beginPath();
-        //   ctx.moveTo(joinX, joinY);
-        //   ctx.lineTo(joinX, childY);
-        //   ctx.stroke();
-        //
-        //   // Get X center positions of all children
-        //   const childXs = person.children_ids
-        //     .map(id => {
-        //       const child = peopleMap.get(id);
-        //       return child ? child.x + rectW / 2 : null;
-        //     })
-        //     .filter(x => x !== null) as number[];
-        //
-        //   if (childXs.length === 0) return;
-        //
-        //   // Horizontal line connecting all children
-        //   const minX = Math.min(...childXs);
-        //   const maxX = Math.max(...childXs);
-        //   ctx.beginPath();
-        //   ctx.moveTo(minX, childY);
-        //   ctx.lineTo(maxX, childY);
-        //   ctx.stroke();
-        //
-        //   // Vertical lines from horizontal to each child
-        //   person.children_ids.forEach(childId => {
-        //     const child = peopleMap.get(childId);
-        //     if (!child) return;
-        //     const cx = child.x + rectW / 2;
-        //     const cy = child.y;
-        //     ctx.beginPath();
-        //     ctx.moveTo(cx, childY);
-        //     ctx.lineTo(cx, cy);
-        //     ctx.stroke();
-        //   });
-        // }
+        
       }
     });
 
