@@ -24,11 +24,17 @@ export default function ShowTreesPopup() {
 
   return (
     <div className="show-trees-popup-container">
-      <div className="popup-area">
-        {trees.map((tree) => (
-          <PopupTreeDisplay key={tree.id} description={tree.name} />
-        ))}
-      </div>
+        {trees.length === 0 ? (
+          <div className='no-trees-message'> First add a tree </div>
+        ) 
+        : 
+        <div className="popup-area">
+          {trees.map((tree) => (
+            <PopupTreeDisplay key={tree.id} description={tree.name} />
+          ))}
+        </div>
+
+        }
     </div>
   )
 }

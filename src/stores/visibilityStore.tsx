@@ -16,7 +16,7 @@ interface VisibilityState {
 }
 
 const useVisibilityStore = create<VisibilityState>((set) => ({
-  mainMenuVisibility: false, 
+  mainMenuVisibility: true, 
   mainMenuOpened: () => set(() => ({ mainMenuVisibility: true })),
   mainMenuClosed: () => set(() => ({ mainMenuVisibility: false })),
 

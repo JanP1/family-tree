@@ -4,15 +4,14 @@
   position: absolute; /* use absolute if it's within a relatively positioned parent */
   width: 800px;
   height: 80vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  justify-self: center;
   align-self: center;
   z-index: 9999; /* ensure it's on top */
 
   animation: slideUp 0.2s ease-in forwards;
   transform: translateY(60%);
+  overflow: auto;
+ 
 
 }
 
@@ -21,4 +20,56 @@
   to {
     transform: translateY(0);
   }
+}
+
+
+/* Form container */
+
+.scroll-wrapper {
+  /* background-color: burlywood; */
+  height: 800px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.create-tree-form-container {
+  height: 700px;
+  width: 700px;
+  overflow: auto;
+
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.field-title {
+  color: darkslategray;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.input-field {
+  color: lightblue;
+  padding: 5px;
+  width: 400px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid darkslategray;
+  font-size: 20px;
+  margin-bottom: 15px;
+
+}
+
+
+.input-field:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: inherit;
 }
