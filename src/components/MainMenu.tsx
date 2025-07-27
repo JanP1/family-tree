@@ -23,7 +23,7 @@ export default function MainMenu() {
       <div className="menu-button-container">
 
         {/* === Button for showing created trees === */}
-        <button className="animated-button aqua-button" onClick={openShowTreesPopup}>
+        <button tabIndex={-1} className="animated-button aqua-button" onClick={openShowTreesPopup}>
           <svg viewBox="0 0 24 24" className="arr-2" >
             <path
               d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -39,7 +39,7 @@ export default function MainMenu() {
         </button>
 
         {/* === Button for showing tree creation popup === */}
-        <button className="animated-button green-button" onClick={openCreatePopup}>
+        <button tabIndex={-1} className="animated-button green-button" onClick={openCreatePopup}>
           <svg viewBox="0 0 24 24" className="arr-2" >
             <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>

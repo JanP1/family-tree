@@ -14,7 +14,7 @@ body{
   height: calc(100vh - 20px);
   display: flex;
   justify-content: center;
-  background-color: #202422;
+  /* background-color: #202422; */
   overflow: hidden;
 }
 
@@ -33,3 +33,11 @@ body{
   overflow: hidden;
 }
 
+
+.layered-waves-background{
+  position: absolute;
+  width: 100%;
+  
+  bottom: 0px;
+  opacity: 0.2;
+}

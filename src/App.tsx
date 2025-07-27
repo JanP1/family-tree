@@ -5,7 +5,7 @@ import MainMenu from "./components/MainMenu";
 import CreateTreePopup from "./components/popups/CreateTreePopup";
 import ShowTreesPopup from "./components/popups/ShowTreesPopup";
 import useVisibilityStore from "./stores/visibilityStore";
-
+import layered_waves from "./assets/layered-waves.svg"
 
 function App() {
 
@@ -30,6 +30,8 @@ function App() {
 
 
   return (
+    <>
+    <img src={layered_waves} className="layered-waves-background"></img>
     <div className="spa-layout-container" onClick={closePopup}>
       
 
@@ -58,6 +60,7 @@ function App() {
         </div>
       </div>}
     </div>
+    </>
   );
 }
 
