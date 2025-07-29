@@ -1,0 +1,90 @@
+.date-picker-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 100px;
+  font-family: sans-serif;
+}
+
+.selected-value {
+  border: 2px solid #283338;
+  color: lightblue;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+
+  background-color: #17222e;
+  user-select: none;
+  -webkit-user-select: none;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 90px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 2px solid #282a33;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #17222e;
+
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 12px;
+  color: lightblue;
+  z-index: 9999;
+}
+
+.dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #173343;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  stroke: lightblue;
+  margin-left: 8px;
+  align-self: center;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+/* .date-picker-container { */
+/*   color: lightblue; */
+/**/
+/* } */
+/**/
+/* .select-field { */
+/*   background-color: #17222e; */
+/*   cursor: pointer; */
+/*   color: white; */
+/*   margin: 5px; */
+/*   padding: 10px; */
+/*   border: solid 2px lightslategrey; */
+/*   border-radius: 5px; */
+/* } */
+/**/
