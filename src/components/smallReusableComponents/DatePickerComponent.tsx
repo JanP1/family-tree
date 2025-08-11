@@ -27,7 +27,8 @@ const Dropdown = ({
     const handleClickOutside = (event: MouseEvent) => {
       if (
         ref.current &&
-        !ref.current.contains(event.target as Node)
+        !ref.current.contains(event.target as Node) &&
+        !(event.target as HTMLElement).closest(".dropdown-options")
       ) {
         setOpen(false);
       }
